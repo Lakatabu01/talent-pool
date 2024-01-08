@@ -2,7 +2,7 @@ import DefaultButton from "./default_button";
 
 const Header = () => {
   return (
-    <header className="w-full bg-[#fff] flex justify-center py-8 border">
+    <header className="w-full bg-[#fff] flex justify-center py-8 ">
       <div className="flex justify-around items-center w-[80%]">
         <div className="bg-[#747474] w-12 h-6 rounded"></div>
         <nav className="flex text-base list-none">
@@ -13,9 +13,7 @@ const Header = () => {
           <li className="px-2">Contact</li>
         </nav>
 
-        {/* //fix button text 
-        //commit */}
-        <DefaultButton buttonName="Get started" buttonColor="blue" />
+        <DefaultButton buttonName="Get started" />
         <div className="flex">
           <p>Login</p>
           <svg
