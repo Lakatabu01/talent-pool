@@ -2,12 +2,12 @@ import Image from "next/image";
 import model1 from "../assets/images/model1.jpeg";
 import model2 from "../assets/images/model2.jpeg";
 import model3 from "../assets/images/model3.jpeg";
-import background from "../assets/images/background.png";
+import whsam from "../assets/images/whsam.png";
 
 const Individuals = () => {
   return (
     <section className="flex flex-col items-center my-8 font-montserrat">
-      <div className="w-[95%]  ">
+      <div className="w-[90%]  ">
         <div>
           <div>
             <ul className="list-disc pl-4">
@@ -117,7 +117,7 @@ const Individuals = () => {
       </div>
 
       <div className="w-full  flex justify-center mt-20">
-        <div className="h-[50vw]  bg-blue-500 rounded-tr-full rounded-tl-full w-[100vw]">
+        <div className="h-[50vw]  bg-[#9797FF] rounded-tr-full p-10 rounded-tl-full w-[100vw] flex justify-around">
           <div className="w-[30%]">
             <div className="bg-[white] py-8 rounded-2xl border">
               <div className="flex">
@@ -158,6 +158,47 @@ const Individuals = () => {
                   Your skills are evaluated by industry experts, giving you the
                   credibility you deserve.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex w-[50%] border border-[red] items-center justify-center">
+            <div className="flex -mt-20 border border-[purple] justify-center h-[80%] items-center">
+              <div className="bg-white border border-[green] p-8">
+                <div className="flex">
+                  <div className="w-8 bg-yellow-500">lorem</div>
+                  <div>
+                    <p>Product Strategy</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="w-8 bg-yellow-500">lorem</div>
+                  <div>
+                    <p>Product Strategy</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="w-8 bg-yellow-500">lorem</div>
+                  <div>
+                    <p>Product Strategy</p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="w-8 bg-yellow-500">lorem</div>
+                  <div>
+                    <p>Product Strategy</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border border-[yellow] ">
+                <Image
+                  src={whsam}
+                  alt="Whsam closeup shot"
+                  width="500"
+                  height="500"
+                  className="h-full w-full"
+                />
               </div>
             </div>
           </div>
