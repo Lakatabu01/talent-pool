@@ -2,11 +2,12 @@ import Image from "next/image";
 import model1 from "../assets/images/model1.jpeg";
 import model2 from "../assets/images/model2.jpeg";
 import model3 from "../assets/images/model3.jpeg";
+import background from "../assets/images/background.png";
 
 const Individuals = () => {
   return (
     <section className="flex flex-col items-center my-8 font-montserrat">
-      <div className="w-[95%] border ">
+      <div className="w-[95%]  ">
         <div>
           <div>
             <ul className="list-disc pl-4">
@@ -105,18 +106,60 @@ const Individuals = () => {
                 <li className="text-[#2F2F8C] text-lg">Why Choose Us?</li>
               </ul>
 
-              <h2 className="text-4xl my-4">
+              <h2 className="text-4xl my-4 font-semibold">
                 Hire With Confidence, Here <br /> On DashTalent
               </h2>
             </div>
 
-            <div className="opacity-70 blur-2xl rotate-280 relative bottom-8 left-6 bg-gradient-to-l from-[#4545C44F] via-[#7C7CEAE8] to-[#fff] w-60 h-40"></div>
+            <div className="mt-14 opacity-70 blur-2xl rotate-280 relative bottom-8 left-6 bg-gradient-to-l from-[#4545C44F] via-[#7C7CEAE8] to-[#fff] w-60 h-40"></div>
           </div>
         </div>
+      </div>
 
-        <div className="w-full flex justify-center pt-10">
-          <div className="w-[100vw] h-[100vw] rounded-full bg-[#9797FF]">
-            lorem
+      <div className="w-full  flex justify-center mt-20">
+        <div className="h-[50vw]  bg-blue-500 rounded-tr-full rounded-tl-full w-[100vw]">
+          <div className="w-[30%]">
+            <div className="bg-[white] py-8 rounded-2xl border">
+              <div className="flex">
+                <div className="w-8 bg-yellow-500">lorem</div>
+                <div>Vetting By Proffessionals</div>
+              </div>
+              <div>
+                <p>
+                  We ensure that only the best talents make it to our platform.
+                  Your skills are evaluated by industry experts, giving you the
+                  credibility you deserve.
+                </p>
+              </div>
+            </div>
+
+            <div className="my-4 bg-[white] py-10 rounded-2xl border">
+              <div className="flex">
+                <div className="w-8 bg-yellow-500">lorem</div>
+                <div>Vetting By Proffessionals</div>
+              </div>
+              <div>
+                <p>
+                  We ensure that only the best talents make it to our platform.
+                  Your skills are evaluated by industry experts, giving you the
+                  credibility you deserve.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[white] py-8 rounded-2xl border">
+              <div className="flex">
+                <div className="w-8 bg-yellow-500">lorem</div>
+                <div>Vetting By Proffessionals</div>
+              </div>
+              <div>
+                <p>
+                  We ensure that only the best talents make it to our platform.
+                  Your skills are evaluated by industry experts, giving you the
+                  credibility you deserve.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
