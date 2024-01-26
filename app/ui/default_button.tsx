@@ -5,7 +5,7 @@ interface DefaultButtonProps {
 interface TransparentButtonProps {
   btnName: string;
 }
-const defaultButton = ({ buttonName }: DefaultButtonProps) => {
+const DefaultButton = ({ buttonName }: DefaultButtonProps) => {
   return (
     <button
       className={` bg-[#2F2F8C] text-sm rounded px-4 py-2 border text-white`}>
@@ -22,5 +22,5 @@ const TransparentButton = ({ btnName }: TransparentButtonProps) => {
   );
 };
 
-export default defaultButton;
+export default DefaultButton;
 export { TransparentButton };

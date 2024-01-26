@@ -1,8 +1,42 @@
+"use client";
+
 import DefaultButton from "./default_button";
+import Image from "next/image";
+import layer from "../assets/icons/layer.svg";
+import avatar1 from "../assets/images/Avatar1.png";
+import avatar2 from "../assets/images/Avatar2.png";
+import avatar3 from "../assets/images/Avatar3.png";
+import { useState } from "react";
 
 const VettedTalent = () => {
+  const [clicked1, setClicked1] = useState(false);
+  const [clicked2, setClicked2] = useState(false);
+  const [clicked3, setClicked3] = useState(false);
+  const [clicked4, setClicked4] = useState(false);
+  const [clicked5, setClicked5] = useState(false);
+
+  const FAQ1 = () => {
+    setClicked1(!clicked1);
+  };
+
+  const FAQ2 = () => {
+    setClicked2(!clicked2);
+  };
+
+  const FAQ3 = () => {
+    setClicked3(!clicked3);
+  };
+
+  const FAQ4 = () => {
+    setClicked4(!clicked4);
+  };
+
+  const FAQ5 = () => {
+    setClicked5(!clicked5);
+  };
+
   return (
-    <section className="w-full">
+    <section className="w-full ">
       <div className="w-full flex justify-center font-Montserrat bg-[#F4F4F4]">
         <div className="w-[60%] my-24">
           <h2 className="text-center text-[#2F2F8C] font-semibold text-4xl">
@@ -110,7 +144,7 @@ const VettedTalent = () => {
             </div>
 
             <div className="flex w-full my-16 justify-between ">
-              <div className="w-[20%] rounded-xl shadow-xl border py-6 flex flex-col items-center px-4">
+              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +166,7 @@ const VettedTalent = () => {
                   experts
                 </p>
               </div>
-              <div className="w-[20%] rounded-xl shadow-xl border py-6 flex flex-col items-center px-4">
+              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +188,7 @@ const VettedTalent = () => {
                   experts
                 </p>
               </div>
-              <div className="w-[20%] rounded-xl shadow-xl border py-6 flex flex-col items-center px-4">
+              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +210,7 @@ const VettedTalent = () => {
                   experts
                 </p>
               </div>
-              <div className="w-[20%] rounded-xl shadow-xl border py-6 flex flex-col items-center px-4">
+              <div className="w-[23%] rounded-xl  shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -199,6 +233,299 @@ const VettedTalent = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col items-center  bg-[#F4F4F4] pb-32">
+        <div className="w-[90%] pt-20">
+          <div>
+            <ul className="list-disc pl-4">
+              <li className="text-[#2F2F8C] text-lg">Testimonials</li>
+            </ul>
+
+            <h2 className="text-4xl my-4">
+              Client Success in Their Own <br /> Words
+            </h2>
+          </div>
+        </div>
+
+        <div className="w-[94%] ml-12 flex justify-between ">
+          <div className="w-[30%]  p-4  border-[#4D4DB2] border-t-0 border-l-0 border-r-2 border-b-2 border-dashed">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="none">
+              <path
+                d="M10.554 1.74354C6.61697 4.26354 4.64897 7.30053 4.64897 10.8505C4.64897 11.9555 4.84197 12.5075 5.22597 12.5075L5.62197 12.4005C5.93397 12.2805 6.18497 12.2205 6.37797 12.2205C7.50497 12.2205 8.44797 12.6305 9.20297 13.4505C9.95897 14.2705 10.337 15.2805 10.337 16.4865C10.337 17.6435 9.92697 18.6265 9.11197 19.4335C8.29597 20.2405 7.31197 20.6435 6.15997 20.6435C4.55197 20.6435 3.22497 19.9835 2.17997 18.6605C1.13697 17.3405 0.615967 15.6805 0.615967 13.6835C0.615967 11.4235 1.05797 9.35653 1.94597 7.48054C2.83597 5.60554 4.18997 3.91054 6.01397 2.39554C7.83797 0.881535 9.00197 0.123535 9.50597 0.123535C9.84197 0.123535 10.118 0.285535 10.334 0.609535C10.55 0.932535 10.658 1.21454 10.658 1.45454L10.551 1.74254L10.554 1.74354ZM23.514 1.74354C19.577 4.26354 17.61 7.29954 17.61 10.8515C17.61 11.9565 17.803 12.5085 18.187 12.5085L18.583 12.4015C18.895 12.2815 19.146 12.2215 19.339 12.2215C20.442 12.2215 21.379 12.6315 22.146 13.4515C22.916 14.2715 23.298 15.2815 23.298 16.4875C23.298 17.6445 22.888 18.6275 22.073 19.4345C21.257 20.2415 20.273 20.6445 19.121 20.6445C17.513 20.6445 16.186 19.9845 15.141 18.6615C14.098 17.3415 13.577 15.6815 13.577 13.6845C13.577 11.4005 14.025 9.31454 14.927 7.42853C15.827 5.54153 17.182 3.85154 18.994 2.36154C20.809 0.870535 21.966 0.124536 22.469 0.124536C22.806 0.124536 23.082 0.286535 23.299 0.610535C23.514 0.934535 23.622 1.21654 23.622 1.45654L23.514 1.74354Z"
+                fill="black"
+              />
+            </svg>
+            <div className="my-6">
+              <p className="text-base">
+                My internship at Axia Africa has been nothing short of
+                transformative. From day one, I was thrust into real projects,
+                applying the skills I learned in school to solve actual
+                challenges. The mentorship I received was invaluable, guiding me
+                through complex coding scenarios and helping me grow as a
+                developer.
+              </p>
+            </div>
+            <div className="flex mb-3">
+              <div className="w-8 bg-blue-900 p-1 rounded-full mr-4">
+                <Image src={layer} alt="layer icon" width="100" height="100" />
+              </div>
+              <div className="text-xl font-semibold text-[#000]">
+                Obanijesu Ropola
+              </div>
+            </div>
+          </div>
+          <div className="w-[30%]  p-4  border-[#4D4DB2] border-t-0 border-l-0 border-r-2 border-b-2 border-dashed">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="none">
+              <path
+                d="M10.554 1.74354C6.61697 4.26354 4.64897 7.30053 4.64897 10.8505C4.64897 11.9555 4.84197 12.5075 5.22597 12.5075L5.62197 12.4005C5.93397 12.2805 6.18497 12.2205 6.37797 12.2205C7.50497 12.2205 8.44797 12.6305 9.20297 13.4505C9.95897 14.2705 10.337 15.2805 10.337 16.4865C10.337 17.6435 9.92697 18.6265 9.11197 19.4335C8.29597 20.2405 7.31197 20.6435 6.15997 20.6435C4.55197 20.6435 3.22497 19.9835 2.17997 18.6605C1.13697 17.3405 0.615967 15.6805 0.615967 13.6835C0.615967 11.4235 1.05797 9.35653 1.94597 7.48054C2.83597 5.60554 4.18997 3.91054 6.01397 2.39554C7.83797 0.881535 9.00197 0.123535 9.50597 0.123535C9.84197 0.123535 10.118 0.285535 10.334 0.609535C10.55 0.932535 10.658 1.21454 10.658 1.45454L10.551 1.74254L10.554 1.74354ZM23.514 1.74354C19.577 4.26354 17.61 7.29954 17.61 10.8515C17.61 11.9565 17.803 12.5085 18.187 12.5085L18.583 12.4015C18.895 12.2815 19.146 12.2215 19.339 12.2215C20.442 12.2215 21.379 12.6315 22.146 13.4515C22.916 14.2715 23.298 15.2815 23.298 16.4875C23.298 17.6445 22.888 18.6275 22.073 19.4345C21.257 20.2415 20.273 20.6445 19.121 20.6445C17.513 20.6445 16.186 19.9845 15.141 18.6615C14.098 17.3415 13.577 15.6815 13.577 13.6845C13.577 11.4005 14.025 9.31454 14.927 7.42853C15.827 5.54153 17.182 3.85154 18.994 2.36154C20.809 0.870535 21.966 0.124536 22.469 0.124536C22.806 0.124536 23.082 0.286535 23.299 0.610535C23.514 0.934535 23.622 1.21654 23.622 1.45654L23.514 1.74354Z"
+                fill="black"
+              />
+            </svg>
+            <div className="my-6">
+              <p className="text-base">
+                My internship at Axia Africa has been nothing short of
+                transformative. From day one, I was thrust into real projects,
+                applying the skills I learned in school to solve actual
+                challenges. The mentorship I received was invaluable, guiding me
+                through complex coding scenarios and helping me grow as a
+                developer.
+              </p>
+            </div>
+            <div className="flex mb-3">
+              <div className="w-8 bg-blue-900 p-1 rounded-full mr-4">
+                <Image src={layer} alt="layer icon" width="100" height="100" />
+              </div>
+              <div className="text-xl font-semibold text-[#000]">
+                Obanijesu Ropola
+              </div>
+            </div>
+          </div>
+          <div className="w-[30%]  p-4  border-[#4D4DB2] border-t-0 border-l-0 border-r-2 border-b-2 border-dashed">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="none">
+              <path
+                d="M10.554 1.74354C6.61697 4.26354 4.64897 7.30053 4.64897 10.8505C4.64897 11.9555 4.84197 12.5075 5.22597 12.5075L5.62197 12.4005C5.93397 12.2805 6.18497 12.2205 6.37797 12.2205C7.50497 12.2205 8.44797 12.6305 9.20297 13.4505C9.95897 14.2705 10.337 15.2805 10.337 16.4865C10.337 17.6435 9.92697 18.6265 9.11197 19.4335C8.29597 20.2405 7.31197 20.6435 6.15997 20.6435C4.55197 20.6435 3.22497 19.9835 2.17997 18.6605C1.13697 17.3405 0.615967 15.6805 0.615967 13.6835C0.615967 11.4235 1.05797 9.35653 1.94597 7.48054C2.83597 5.60554 4.18997 3.91054 6.01397 2.39554C7.83797 0.881535 9.00197 0.123535 9.50597 0.123535C9.84197 0.123535 10.118 0.285535 10.334 0.609535C10.55 0.932535 10.658 1.21454 10.658 1.45454L10.551 1.74254L10.554 1.74354ZM23.514 1.74354C19.577 4.26354 17.61 7.29954 17.61 10.8515C17.61 11.9565 17.803 12.5085 18.187 12.5085L18.583 12.4015C18.895 12.2815 19.146 12.2215 19.339 12.2215C20.442 12.2215 21.379 12.6315 22.146 13.4515C22.916 14.2715 23.298 15.2815 23.298 16.4875C23.298 17.6445 22.888 18.6275 22.073 19.4345C21.257 20.2415 20.273 20.6445 19.121 20.6445C17.513 20.6445 16.186 19.9845 15.141 18.6615C14.098 17.3415 13.577 15.6815 13.577 13.6845C13.577 11.4005 14.025 9.31454 14.927 7.42853C15.827 5.54153 17.182 3.85154 18.994 2.36154C20.809 0.870535 21.966 0.124536 22.469 0.124536C22.806 0.124536 23.082 0.286535 23.299 0.610535C23.514 0.934535 23.622 1.21654 23.622 1.45654L23.514 1.74354Z"
+                fill="black"
+              />
+            </svg>
+            <div className="my-6">
+              <p className="text-base">
+                My internship at Axia Africa has been nothing short of
+                transformative. From day one, I was thrust into real projects,
+                applying the skills I learned in school to solve actual
+                challenges. The mentorship I received was invaluable, guiding me
+                through complex coding scenarios and helping me grow as a
+                developer.
+              </p>
+            </div>
+            <div className="flex mb-3">
+              <div className="w-8 bg-blue-900 p-1 rounded-full mr-4">
+                <Image src={layer} alt="layer icon" width="100" height="100" />
+              </div>
+              <div className="text-xl font-semibold text-[#000]">
+                Obanijesu Ropola
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[90%] flex flex-col items-center mt-32 mb-20 mx-auto">
+        <h3 className="text-[#2F2F8C] text-4xl">Frequently asked questions</h3>
+        <p className="text-center my-5">
+          We believe that diverse perspectives drive innovation, and we strive
+          to create an{" "}
+        </p>
+      </div>
+
+      <div className="w-full flex justify-center">
+        <div className="w-[80%] flex flex-col text-base font-semibold font-montserrat text-[#101828]">
+          <div className="my-4 py-2 px-4">
+            <div className="flex justify-between items-center">
+              <p>How long is the internship program?</p>
+              <button className="bg-[transparent] border-none " onClick={FAQ1}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#202054"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`w-full  animate-slide-in-up pt-2 ${
+                clicked1 ? "block" : "hidden"
+              } `}>
+              Lorem, ipsum dolor.
+            </div>
+          </div>
+
+          <div className="my-4 py-2 px-4">
+            <div className="flex justify-between items-center">
+              <p>Can I apply for more than one internship position?</p>
+              <button className="bg-[transparent] border-none " onClick={FAQ2}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#202054"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`w-full  animate-slide-in-up pt-2 ${
+                clicked2 ? "block" : "hidden"
+              } `}>
+              Lorem, ipsum dolor.
+            </div>
+          </div>
+
+          <div className="my-4 py-2 px-4">
+            <div className="flex justify-between items-center">
+              <p>Are remote internships available?</p>
+              <button className="bg-[transparent] border-none " onClick={FAQ3}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#202054"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`w-full  animate-slide-in-up pt-2 ${
+                clicked3 ? "block" : "hidden"
+              } `}>
+              Lorem, ipsum dolor.
+            </div>
+          </div>
+
+          <div className="my-4 py-2 px-4">
+            <div className="flex justify-between items-center">
+              <p>
+                How can I stay updated on internship opportunities and company
+                news?
+              </p>
+              <button className="bg-[transparent] border-none " onClick={FAQ4}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#202054"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`w-full  animate-slide-in-up pt-2 ${
+                clicked4 ? "block" : "hidden"
+              } `}>
+              Lorem, ipsum dolor.
+            </div>
+          </div>
+
+          <div className="my-4 py-2 px-4">
+            <div className="flex justify-between items-center">
+              <p>What happens after I submit my application?</p>
+              <button className="bg-[transparent] border-none " onClick={FAQ5}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none">
+                  <path
+                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                    stroke="#202054"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className={`w-full  animate-slide-in-up pt-2 ${
+                clicked5 ? "block" : "hidden"
+              } `}>
+              Lorem, ipsum dolor.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex w-full justify-center bg-[#F9FAFB]">
+        <div className="w-[50%] my-10">
+          <div className="w-full flex justify-center mt-14">
+            <div className="flex justify-center px-4">
+              <Image src={avatar1} alt="image of man" />
+              <Image
+                className="-ml-4"
+                src={avatar2}
+                alt="image of smiling woman"
+              />
+              <Image
+                className="-ml-4"
+                src={avatar3}
+                alt="image of smiling woman"
+              />
+            </div>
+          </div>
+
+          <h3 className="text-[#2F2F8C] text-4xl text-center py-8">
+            Unleash your talent now and begin your internship role Today
+          </h3>
+
+          <div className="w-full flex justify-center">
+            <DefaultButton buttonName="Register" />
           </div>
         </div>
       </div>
