@@ -6,8 +6,10 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
+
       boxShadow: {
         'around': '0px 2px 60px -3px rgba(14, 14, 14, 0.10), 0px 2px 10px 2px rgba(14, 14, 14, 0.12)',
       },
@@ -20,19 +22,27 @@ const config: Config = {
         
         "montserrat": "var(--font-montserrat)"
       },
+      animation: {
+        'slide-in-up': 'slideUp 0.5s ease-in',
+        'drop': 'expand 0.5s ease-in-out',
     },
-    animation: {
-      'slide-in-up': 'slideUp 0.5s ease-in',
-  },
-  keyframes: {
+    keyframes: {
 
-    slideUp: {
-      '0%': { transform: 'translateY(-10px)', opacity: "0" },
-      "90%": {transform: 'translateY(-5px)', opacity: "0.8"},
-      '100%': { transform: 'translateY(0)', opacity: "1" },
-    },    
-},
+      slideUp: {
+        '0%': { transform: 'translateY(-10px)', opacity: "0" },
+        "90%": {transform: 'translateY(-5px)', opacity: "0.8"},
+        '100%': { transform: 'translateY(0)', opacity: "1" },
+      },    
+
+      expand: {
+        '0%': { height: '0', opacity: "0", width: "100vw" },
+        "90%": {height: '100vh', opacity: "0.4", width: "100vw"},
+        '100%': { height: '90vh', opacity: "1", width: "100vw" },
+      },
   },
+
   plugins: [],
+    },
+  },
 }
 export default config

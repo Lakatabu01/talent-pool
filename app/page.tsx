@@ -8,10 +8,9 @@ import "./globals.css";
 export default function Home() {
   return (
     <main className="w-full">
-      <Header />
       <HeroSection />
-      <Individuals />
-      <VettedTalent />
+      {/* <Individuals />
+      <VettedTalent /> */}
     </main>
   );
 }

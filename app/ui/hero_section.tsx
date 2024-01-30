@@ -8,17 +8,17 @@ import avatar3 from "../assets/images/Avatar3.png";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#A1A1FF77] via-[#9E9EF877] to-[#19195D00] w-full">
-      <div className="flex w-full justify-end">
-        <div className="flex flex-col justify-end rot">
-          <div className="bg-[#2F2F8C] p-2 rounded rotate-45 mr-20">
+    <section className="bg-gradient-to-b from-[#A1A1FF77] via-[#9E9EF877] to-[#19195D00] w-full pt-28">
+      <div className="flex w-full justify-end  ">
+        <div className="flex flex-col justify-end">
+          <div className="bg-[#2F2F8C] p-2 rounded rotate-45 lg:mr-20 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6 text-white">
+              className="lg:w-6 lg:h-6 w-3 h-3 text-white">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -29,6 +29,7 @@ const HeroSection = () => {
         </div>
         <div>
           <svg
+            className="w-14 h-14 lg:w-24 lg:h-24"
             xmlns="http://www.w3.org/2000/svg"
             width="116"
             height="147"
@@ -68,27 +69,27 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full mt-4">
-        <h1 className="text-center text-3xl font-bold">
+      <div className="lg:w-full w-[85%] mt-7 mx-auto lg:mx-0 ">
+        <h1 className="text-center text-2xl lg:text-3xl font-bold ">
           Swiftly and <span className="text-[#2F2F8C]">Cost-Effectively</span>{" "}
           Recruit the Best
           <br /> Talents in Just Seconds.
         </h1>
-        <p className="text-center text-base my-3">
+        <p className="mx-auto lg:text-center text-sm lg:text-base my-3">
           DashTalents is your go-to platform for connecting with highly skilled{" "}
           <br /> professionals at affordable rates.
         </p>
       </div>
 
-      <div className="flex justify-center my-6">
+      <div className="flex w-full  justify-center my-6">
         <div>
           <DefaultButton buttonName="Hire Talents" />
           <TransparentButton btnName="Become a Talent" />
         </div>
       </div>
 
-      <div className="w-full flex justify-end mt-4 ">
-        <div className="bg-white rounded-lg flex flex-col  mr-12  mt-8 shadow-lg py-4">
+      <div className="w-full flex justify-end mt-4">
+        <div className="bg-white rounded-lg flex flex-col mr-12  mt-8 shadow-lg py-4">
           <div className="flex justify-center px-4">
             <Image src={avatar1} alt="image of man" />
             <Image
