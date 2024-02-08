@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
 import { useState } from "react";
@@ -13,16 +13,19 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-[#fff] w-full  z-50 fixed right-0 left-0 flex flex-col lg:flex-row lg:justify-center py-8 ${
+      className={`bg-[#fff]  w-full z-50 fixed flex flex-col lg:flex-row lg:justify-center py-8 ${
         dropped == true ? "animate-drop shadow-2xl" : ""
       } `}>
       <div className="flex justify-between w-[89%] mx-auto items-center lg:w-[90%]">
-        <div className="bg-[#747474] w-12 h-6 rounded"></div>
-        <nav className="lg:flex text-base list-none hidden">
+        <div className="bg-[#747474] w-16 h-6 rounded"></div>
+        <nav className="lg:flex text-base list-none hidden w-[60%]  justify-between">
           <li className="px-2">Join talent pool</li>
           <li className="px-2">Hire a talent</li>
           <li className="px-2">Discover solutions</li>
-          <li className="px-2">About</li>
+          <li className="px-2">
+            {" "}
+            <Link href="/about">About</Link>{" "}
+          </li>
           <li className="px-2">Contact</li>
         </nav>
 

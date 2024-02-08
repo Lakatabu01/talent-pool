@@ -10,7 +10,18 @@ const config: Config = {
   theme: {
     extend: {
 
-      boxShadow: {
+      backgroundColor: {
+        'light-blue': '#A1A1FF77',
+         'dark-blue': '#2F2F8C', 
+      },
+
+      colors: {
+        'light-blue': '#A1A1FF77',
+        'dark-blue': '#202054',
+        'light-black':'#484747'
+      },
+     
+         boxShadow: {
         'around': '0px 2px 60px -3px rgba(14, 14, 14, 0.10), 0px 2px 10px 2px rgba(14, 14, 14, 0.12)',
       },
       backgroundImage: {
@@ -36,7 +47,7 @@ const config: Config = {
 
       expand: {
         '0%': { height: '0', opacity: "0", width: "100vw" },
-        "90%": {height: '100vh', opacity: "0.4", width: "100vw"},
+        "90%": {height: '70vh', opacity: "0.4", width: "100vw"},
         '100%': { height: '90vh', opacity: "1", width: "100vw" },
       },
   },

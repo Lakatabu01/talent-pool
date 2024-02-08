@@ -69,27 +69,27 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="lg:w-full w-[85%] mt-7 mx-auto lg:mx-0 ">
+      <div className="lg:w-full w-[85%] mt-7 mx-auto lg:mx-0">
         <h1 className="text-center text-2xl lg:text-3xl font-bold ">
           Swiftly and <span className="text-[#2F2F8C]">Cost-Effectively</span>{" "}
           Recruit the Best
           <br /> Talents in Just Seconds.
         </h1>
-        <p className="mx-auto lg:text-center text-sm lg:text-base my-3">
+        <p className="text-center text-sm lg:text-base my-3">
           DashTalents is your go-to platform for connecting with highly skilled{" "}
           <br /> professionals at affordable rates.
         </p>
       </div>
 
-      <div className="flex w-full  justify-center my-6">
+      <div className="flex w-full  justify-center my-8 lg:my-6">
         <div>
           <DefaultButton buttonName="Hire Talents" />
           <TransparentButton btnName="Become a Talent" />
         </div>
       </div>
 
-      <div className="w-full flex justify-end mt-4">
-        <div className="bg-white rounded-lg flex flex-col mr-12  mt-8 shadow-lg py-4">
+      <div className="lg:w-full w-2/3 mx-auto lg:mx-auto flex justify-center lg:justify-end mt-4">
+        <div className="bg-white rounded-lg flex flex-col lg:mr-12  mt-8 shadow-lg py-4">
           <div className="flex justify-center px-4">
             <Image src={avatar1} alt="image of man" />
             <Image
@@ -129,6 +129,7 @@ const HeroSection = () => {
 
       <div className="w-full">
         <svg
+          className="w-14 h-14 lg:w-24 lg:h-24"
           xmlns="http://www.w3.org/2000/svg"
           width="105"
           height="131"

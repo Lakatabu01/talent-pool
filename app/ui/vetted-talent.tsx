@@ -7,6 +7,7 @@ import avatar1 from "../assets/images/Avatar1.png";
 import avatar2 from "../assets/images/Avatar2.png";
 import avatar3 from "../assets/images/Avatar3.png";
 import { useState } from "react";
+import SuccessSlider from "./client_success_slider";
 
 const VettedTalent = () => {
   const [clicked1, setClicked1] = useState(false);
@@ -37,9 +38,9 @@ const VettedTalent = () => {
 
   return (
     <section className="w-full ">
-      <div className="w-full flex justify-center font-Montserrat bg-[#F4F4F4]">
-        <div className="w-[60%] my-24">
-          <h2 className="text-center text-[#2F2F8C] font-semibold text-4xl">
+      <div className="w-full flex justify-center font-Montserrat bg-[#F4F4F4] py-24">
+        <div className="lg:w-[60%] w-[90%]">
+          <h2 className="text-center text-[#2F2F8C] font-semibold text-2xl lg:text-4xl">
             Become a vetted talent today
           </h2>
           <p className="py-6 text-center text-[#484747] text-base">
@@ -57,40 +58,43 @@ const VettedTalent = () => {
       <div className="w-full flex justify-center">
         <div className="w-[90%] pt-24">
           <div>
-            <ul className="list-disc pl-4">
-              <li className="text-[#2F2F8C] text-lg">How it works</li>
+            <ul className="list-disc pl-4 lg:flex-none flex justify-center lg:justify-start">
+              <li className="text-[#2F2F8C] text-sm lg:text-lg ">
+                How it works
+              </li>
             </ul>
 
-            <h2 className="text-4xl my-4">
+            <h2 className="lg:text-4xl text-2xl my-4 lg:text-start text-center">
               Navigating Success: Our <br /> Simple Steps
             </h2>
           </div>
 
-          <div className="font-montserrat flex pt-14">
-            <div className="w-[50%]  border border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
-              <div className="w-[80%] -mt-3 ">
-                <div className="rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
+          <div className="font-montserrat flex lg:flex-row flex-col pt-14">
+            <div className="w-full lg:w-[50%]  border border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
+              <div className="w-full lg:w-[80%] -mt-3 ">
+                <div className=" mx-auto lg:mx-0 rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
                   1
                 </div>
-                <h2 className="py-6 font-semibold  text-[28px]">
+                <h2 className="py-6 font-semibold  text-[28px] text-center lg:text-start">
                   Vetted Proffessionals
                 </h2>
-                <p className="font-semibold text-base">
+                <p className="font-semibold text-base text-center lg:text-start">
                   We ensure that only the best talents make it to our platform.
                   Your skills are evaluated by industry experts, giving you the
                   credibility you deserve.
                 </p>
               </div>
             </div>
-            <div className="w-[50%] border  border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
-              <div className="w-[80%] -mt-3 ">
-                <div className="rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
+
+            <div className="w-full lg:w-[50%] border  border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0 mt-10 lg:mt-0">
+              <div className="w-full lg:w-[80%] -mt-3 ">
+                <div className="mx-auto lg:mx-0 rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
                   2
                 </div>
-                <h2 className="py-6 font-semibold  text-[28px]">
+                <h2 className="py-6 font-semibold  text-[28px] text-center lg:text-start">
                   Vetted Proffessionals
                 </h2>
-                <p className="font-semibold text-base">
+                <p className="font-semibold text-base text-center lg:text-start">
                   We ensure that only the best talents make it to our platform.
                   Your skills are evaluated by industry experts, giving you the
                   credibility you deserve.
@@ -99,31 +103,32 @@ const VettedTalent = () => {
             </div>
           </div>
 
-          <div className="font-montserrat flex pt-14">
-            <div className="w-[50%]  border border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
-              <div className="w-[80%] -mt-3 ">
-                <div className="rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
+          <div className="font-montserrat flex flex-col lg:flex-row pt-10 lg:pt-14">
+            <div className="w-full lg:w-[50%]  border border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
+              <div className="w-full lg:w-[80%] -mt-3 ">
+                <div className="mx-auto lg:mx-0 rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
                   3
                 </div>
-                <h2 className="py-6 font-semibold  text-[28px]">
+                <h2 className="py-6 font-semibold  text-[28px] text-center lg:text-start">
                   Vetted Proffessionals
                 </h2>
-                <p className="font-semibold text-base">
+                <p className="font-semibold text-base text-center lg:text-start">
                   We ensure that only the best talents make it to our platform.
                   Your skills are evaluated by industry experts, giving you the
                   credibility you deserve.
                 </p>
               </div>
             </div>
-            <div className="w-[50%] border  border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0">
-              <div className="w-[80%] -mt-3 ">
-                <div className="rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
+
+            <div className="w-full lg:w-[50%] border  border-[#A09D9D] border-dashed border-r-0 border-b-0 border-l-0 lg:mt-0 mt-10">
+              <div className="w-full lg:w-[80%] -mt-3 ">
+                <div className="mx-auto lg:mx-0 rounded-full bg-[#4D4DB2] flex justify-center items-center p-2 w-6 h-6 text-white text-xs">
                   4
                 </div>
-                <h2 className="py-6 font-semibold  text-[28px]">
+                <h2 className="py-6 font-semibold  text-[28px] lg:text-start text-center">
                   Vetted Proffessionals
                 </h2>
-                <p className="font-semibold text-base">
+                <p className="font-semibold text-base lg:text-start text-center">
                   We ensure that only the best talents make it to our platform.
                   Your skills are evaluated by industry experts, giving you the
                   credibility you deserve.
@@ -134,17 +139,19 @@ const VettedTalent = () => {
 
           <div className="w-full my-32">
             <div>
-              <ul className="list-disc pl-4">
-                <li className="text-[#2F2F8C] text-lg">Proven Solutions</li>
+              <ul className="list-disc pl-4 lg:flex-none flex justify-center lg:justify-start">
+                <li className="text-[#2F2F8C] text-sm lg:text-lg ">
+                  Proven Solutions
+                </li>
               </ul>
 
-              <h2 className="text-4xl my-4">
+              <h2 className="lg:text-4xl text-2xl my-4 lg:text-start text-center">
                 Explore Profesionals In The <br /> Most Coveted Disciplines
               </h2>
             </div>
 
-            <div className="flex w-full my-16 justify-between ">
-              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
+            <div className="flex flex-col lg:flex-row w-full my-16 justify-between ">
+              <div className="lg:w-[23%] w-full mb-8 rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +173,7 @@ const VettedTalent = () => {
                   experts
                 </p>
               </div>
-              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
+              <div className="lg:w-[23%] w-full mb-8 rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -181,14 +188,13 @@ const VettedTalent = () => {
                   </svg>
                 </div>
                 <h4 className="py-3 font-semibold text-xl text-[#353535] text-center">
-                  Product Management
+                  Application Development
                 </h4>
                 <p className="text-base text-[#484747] text-center">
-                  Take your business to the highest level with our managing
-                  experts
+                  Develop Scalable apps to power your business.
                 </p>
               </div>
-              <div className="w-[23%] rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
+              <div className="lg:w-[23%] w-full mb-8 rounded-xl shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -203,14 +209,13 @@ const VettedTalent = () => {
                   </svg>
                 </div>
                 <h4 className="py-3 font-semibold text-xl text-[#353535] text-center">
-                  Product Management
+                  Data Science & Analytics
                 </h4>
                 <p className="text-base text-[#484747] text-center">
-                  Take your business to the highest level with our managing
-                  experts
+                  Optimize data to inform better decision-making.
                 </p>
               </div>
-              <div className="w-[23%] rounded-xl  shadow-around border py-6 flex flex-col items-center px-4">
+              <div className="lg:w-[23%] w-full rounded-xl  shadow-around border py-6 flex flex-col items-center px-4">
                 <div className="bg-[#2F2F8C] p-3 rounded-full w-fit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +230,7 @@ const VettedTalent = () => {
                   </svg>
                 </div>
                 <h4 className="py-3 font-semibold text-xl text-[#353535] text-center">
-                  Product Management
+                  Branding & Product Design
                 </h4>
                 <p className="text-base text-[#484747] text-center">
                   Take your business to the highest level with our managing
@@ -240,17 +245,21 @@ const VettedTalent = () => {
       <div className="w-full flex flex-col items-center  bg-[#F4F4F4] pb-32">
         <div className="w-[90%] pt-20">
           <div>
-            <ul className="list-disc pl-4">
-              <li className="text-[#2F2F8C] text-lg">Testimonials</li>
+            <ul className="list-disc pl-4 lg:flex-none flex justify-center lg:justify-start">
+              <li className="text-[#2F2F8C] text-sm lg:text-lg ">
+                Testimonials
+              </li>
             </ul>
 
-            <h2 className="text-4xl my-4">
+            <h2 className="lg:text-4xl text-2xl my-4 lg:text-start text-center">
               Client Success in Their Own <br /> Words
             </h2>
           </div>
         </div>
 
-        <div className="w-[94%] ml-12 flex justify-between ">
+        <SuccessSlider />
+
+        <div className="w-[94%] ml-12 hidden lg:flex justify-between ">
           <div className="w-[30%]  p-4  border-[#4D4DB2] border-t-0 border-l-0 border-r-2 border-b-2 border-dashed">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -347,8 +356,10 @@ const VettedTalent = () => {
         </div>
       </div>
 
-      <div className="w-[90%] flex flex-col items-center mt-32 mb-20 mx-auto">
-        <h3 className="text-[#2F2F8C] text-4xl">Frequently asked questions</h3>
+      <div className="w-[90%] flex flex-col items-center mt-16 lg:mt-32 mb-10 mx-auto">
+        <h3 className="text-[#2F2F8C] text-2xl lg:text-4xl text-center lg:text-start">
+          Frequently asked questions
+        </h3>
         <p className="text-center my-5">
           We believe that diverse perspectives drive innovation, and we strive
           to create an{" "}
@@ -356,10 +367,12 @@ const VettedTalent = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="w-[80%] flex flex-col text-base font-semibold font-montserrat text-[#101828]">
+        <div className="lg:w-[80%] w-[90%] flex flex-col text-base font-semibold font-montserrat text-[#101828]">
           <div className="my-4 py-2 px-4">
             <div className="flex justify-between items-center">
-              <p>How long is the internship program?</p>
+              <p className=" mr-3 lg:mr-0">
+                How long is the internship program?
+              </p>
               <button className="bg-[transparent] border-none " onClick={FAQ1}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -378,7 +391,7 @@ const VettedTalent = () => {
               </button>
             </div>
             <div
-              className={`w-full  animate-slide-in-up pt-2 ${
+              className={`w-full font-normal animate-slide-in-up pt-2 ${
                 clicked1 ? "block" : "hidden"
               } `}>
               Lorem, ipsum dolor.
@@ -387,7 +400,9 @@ const VettedTalent = () => {
 
           <div className="my-4 py-2 px-4">
             <div className="flex justify-between items-center">
-              <p>Can I apply for more than one internship position?</p>
+              <p className=" mr-3 lg:mr-0">
+                Can I apply for more than one internship position?
+              </p>
               <button className="bg-[transparent] border-none " onClick={FAQ2}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -406,7 +421,7 @@ const VettedTalent = () => {
               </button>
             </div>
             <div
-              className={`w-full  animate-slide-in-up pt-2 ${
+              className={`w-full font-normal animate-slide-in-up pt-2 ${
                 clicked2 ? "block" : "hidden"
               } `}>
               Lorem, ipsum dolor.
@@ -415,7 +430,7 @@ const VettedTalent = () => {
 
           <div className="my-4 py-2 px-4">
             <div className="flex justify-between items-center">
-              <p>Are remote internships available?</p>
+              <p className=" mr-3 lg:mr-0">Are remote internships available?</p>
               <button className="bg-[transparent] border-none " onClick={FAQ3}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -434,7 +449,7 @@ const VettedTalent = () => {
               </button>
             </div>
             <div
-              className={`w-full  animate-slide-in-up pt-2 ${
+              className={`w-full font-normal animate-slide-in-up pt-2 ${
                 clicked3 ? "block" : "hidden"
               } `}>
               Lorem, ipsum dolor.
@@ -443,7 +458,7 @@ const VettedTalent = () => {
 
           <div className="my-4 py-2 px-4">
             <div className="flex justify-between items-center">
-              <p>
+              <p className=" mr-3 lg:mr-0">
                 How can I stay updated on internship opportunities and company
                 news?
               </p>
@@ -465,7 +480,7 @@ const VettedTalent = () => {
               </button>
             </div>
             <div
-              className={`w-full  animate-slide-in-up pt-2 ${
+              className={`w-full font-normal animate-slide-in-up pt-2 ${
                 clicked4 ? "block" : "hidden"
               } `}>
               Lorem, ipsum dolor.
@@ -474,7 +489,9 @@ const VettedTalent = () => {
 
           <div className="my-4 py-2 px-4">
             <div className="flex justify-between items-center">
-              <p>What happens after I submit my application?</p>
+              <p className=" mr-3 lg:mr-0">
+                What happens after I submit my application?
+              </p>
               <button className="bg-[transparent] border-none " onClick={FAQ5}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -493,7 +510,7 @@ const VettedTalent = () => {
               </button>
             </div>
             <div
-              className={`w-full  animate-slide-in-up pt-2 ${
+              className={`w-full font-normal animate-slide-in-up pt-2 ${
                 clicked5 ? "block" : "hidden"
               } `}>
               Lorem, ipsum dolor.
@@ -503,7 +520,7 @@ const VettedTalent = () => {
       </div>
 
       <div className="flex w-full justify-center bg-[#F9FAFB]">
-        <div className="w-[50%] my-10">
+        <div className="lg:w-[50%] w-[90%] my-10">
           <div className="w-full flex justify-center mt-14">
             <div className="flex justify-center px-4">
               <Image src={avatar1} alt="image of man" />
@@ -520,7 +537,7 @@ const VettedTalent = () => {
             </div>
           </div>
 
-          <h3 className="text-[#2F2F8C] text-4xl text-center py-8">
+          <h3 className="text-[#2F2F8C] text-2xl lg:text-4xl text-center py-8">
             Unleash your talent now and begin your internship role Today
           </h3>
 
