@@ -4,6 +4,8 @@ import dashes from "../assets/icons/dashes.svg";
 import boardMeeting from "../assets/images/board-meeting.png";
 import SimpleSlider from "./partners_slider";
 import SmilingWoman from "../assets/images/woman.png";
+import FrequentlyAskedQuestions from "./frequently_asked_questions";
+import Unleash from "./unleash";
 
 function Company() {
   return (
@@ -146,11 +148,14 @@ function Company() {
               height={400}
               width={400}
               alt="Smiling Woman"
-              className="w-full rounded-md h-full"
+              className="w-full rounded-md h-full object-cover"
             />
           </div>
         </div>
       </div>
+
+      <FrequentlyAskedQuestions />
+      <Unleash />
     </section>
   );
 }

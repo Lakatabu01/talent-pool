@@ -8,34 +8,10 @@ import avatar2 from "../assets/images/Avatar2.png";
 import avatar3 from "../assets/images/Avatar3.png";
 import { useState } from "react";
 import SuccessSlider from "./client_success_slider";
+import FrequentlyAskedQuestions from "./frequently_asked_questions";
+import Unleash from "./unleash";
 
 const VettedTalent = () => {
-  const [clicked1, setClicked1] = useState(false);
-  const [clicked2, setClicked2] = useState(false);
-  const [clicked3, setClicked3] = useState(false);
-  const [clicked4, setClicked4] = useState(false);
-  const [clicked5, setClicked5] = useState(false);
-
-  const FAQ1 = () => {
-    setClicked1(!clicked1);
-  };
-
-  const FAQ2 = () => {
-    setClicked2(!clicked2);
-  };
-
-  const FAQ3 = () => {
-    setClicked3(!clicked3);
-  };
-
-  const FAQ4 = () => {
-    setClicked4(!clicked4);
-  };
-
-  const FAQ5 = () => {
-    setClicked5(!clicked5);
-  };
-
   return (
     <section className="w-full ">
       <div className="w-full flex justify-center font-Montserrat bg-[#F4F4F4] py-24">
@@ -356,7 +332,8 @@ const VettedTalent = () => {
         </div>
       </div>
 
-      <div className="w-[90%] flex flex-col items-center mt-16 lg:mt-32 mb-10 mx-auto">
+      {/* Delete later */}
+      {/* <div className="w-[90%] flex flex-col items-center mt-16 lg:mt-32 mb-10 mx-auto">
         <h3 className="text-[#2F2F8C] text-2xl lg:text-4xl text-center lg:text-start">
           Frequently asked questions
         </h3>
@@ -517,9 +494,11 @@ const VettedTalent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex w-full justify-center bg-[#F9FAFB]">
+      <FrequentlyAskedQuestions />
+
+      {/* <div className="flex w-full justify-center bg-[#F9FAFB]">
         <div className="lg:w-[50%] w-[90%] my-10">
           <div className="w-full flex justify-center mt-14">
             <div className="flex justify-center px-4">
@@ -545,7 +524,9 @@ const VettedTalent = () => {
             <DefaultButton buttonName="Register" />
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <Unleash />
     </section>
   );
 };
