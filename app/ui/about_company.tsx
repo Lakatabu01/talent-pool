@@ -34,7 +34,7 @@ function Company() {
             About Our Company
           </h2>
           <h2 className="text-dark-blue lg:text-3xl">DashTalent</h2>
-          <p className="my-4 text-center">
+          <p className="my-4 text-center lg:text-start">
             We are a dynamic platform dedicated to bridging the gap between
             ambitious interns and forward-thinking companies. We are devoted to
             empowering the next generation of professionals by connecting them
@@ -54,8 +54,8 @@ function Company() {
           <Image
             src={happyEmployees}
             alt="Smiling model"
-            width="400"
-            height="400"
+            width="500"
+            height="500"
             className="w-full  h-full object-cover rounded-2xl  lg:hidden"
           />
           <div className="hidden lg:block">
@@ -82,23 +82,23 @@ function Company() {
         </div>
 
         <div className="w-full mt-24 flex justify-between">
-          <div className="w-[20%] p-4 border rounded-sm  shadow-lg">
-            <h2 className="text-2xl font-semibold">20K+</h2>
+          <div className="lg:w-[20%] w-[48%] p-4 border rounded-sm  shadow-lg">
+            <h2 className="lg:text-2xl text-lg font-semibold">20K+</h2>
             <h4 className="text-dark-blue my-3 text-lg">Job Opportunities</h4>
             <p>
               We have over 20,000 job opportunities accross all professional
               sectors.
             </p>
           </div>
-          <div className="w-[20%] p-4 border rounded-sm  shadow-lg">
-            <h2 className="text-2xl font-semibold">13K+</h2>
+          <div className="lg:w-[20%] w-[48%] p-4 border rounded-sm  shadow-lg">
+            <h2 className="lg:text-2xl text-lg font-semibold">13K+</h2>
             <h4 className="text-dark-blue my-3 text-lg">Happy Clients</h4>
             <p>
               We have over 20,000 job opportunities accross all professional
               sectors. sectors.
             </p>
           </div>
-          <div className="w-[20%] p-4 border rounded-sm shadow-lg">
+          <div className="w-[20%] p-4 border rounded-sm shadow-lg hidden lg:block">
             <h2 className="text-2xl font-semibold">100</h2>
             <h4 className="text-dark-blue my-3 text-lg">Vetted Individuals</h4>
             <p>
@@ -106,7 +106,7 @@ function Company() {
               sectors.
             </p>
           </div>
-          <div className="w-[20%] p-4 border rounded-sm shadow-lg">
+          <div className="w-[20%] p-4 border rounded-sm shadow-lg hidden lg:block">
             <h2 className="text-2xl font-semibold">20K+</h2>
             <h4 className="text-dark-blue my-3 text-lg">Job Opportunities</h4>
             <p>
@@ -115,9 +115,28 @@ function Company() {
             </p>
           </div>
         </div>
+
+        <div className="w-full mt-14 flex justify-between lg:hidden">
+          <div className="w-[48%] p-4 border rounded-sm shadow-lg  lg:hidden">
+            <h2 className="lg:text-2xl text-lg font-semibold">100</h2>
+            <h4 className="text-dark-blue my-3 text-lg">Vetted Individuals</h4>
+            <p>
+              We have over 20,000 job opportunities accross all professional
+              sectors.
+            </p>
+          </div>
+          <div className="w-[48%] p-4 border rounded-sm shadow-lg  lg:hidden">
+            <h2 className="lg:text-2xl text-lg font-semibold">20K+</h2>
+            <h4 className="text-dark-blue my-3 text-lg">Happy Clients</h4>
+            <p>
+              We have over 20,000 job opportunities accross all professional
+              sectors.
+            </p>
+          </div>
+        </div>
       </div>
 
-      {/* <div className="mt-24 w-[90%] mx-auto ">
+      <div className="mt-24 w-[90%] mx-auto ">
         <div>
           <ul className="list-disc pl-4 lg:flex-none flex justify-center lg:justify-start">
             <li className="text-[#2F2F8C] text-sm lg:text-lg">
@@ -139,11 +158,11 @@ function Company() {
           <div className="bg-[#747474] w-[18%] h-8 "></div>
           <div className="bg-[#747474] w-[18%] h-8 "></div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="w-full bg-[#F4F4F4] mt-20">
-        <div className="mx-auto w-[90%] flex justify-between items-center py-28">
-          <div className="w-[55%]">
+      <div className="w-full bg-[#F4F4F4] mt-20">
+        <div className="mx-auto w-[90%] flex flex-col lg:flex-row justify-between items-center py-28">
+          <div className="lg:w-[55%] w-full">
             <div>
               <ul className="list-disc pl-4 lg:flex-none flex justify-center lg:justify-start">
                 <li className="text-[#2F2F8C] text-sm lg:text-lg">
@@ -155,15 +174,17 @@ function Company() {
                 Fostering Futures, <br /> Connecting Talent
               </h2>
             </div>
-            Our mission is to empower the next generation of professionals by
-            revolutionizing the way interns and companies connect. We are
-            dedicated to fostering a dynamic and inclusive community where
-            talent meets opportunity. Through meticulous curation, transparent
-            processes, and a commitment to excellence, we strive to be the
-            catalyst for meaningful and mutually beneficial collaborations.
+            <p className="text-center lg:text-start">
+              Our mission is to empower the next generation of professionals by
+              revolutionizing the way interns and companies connect. We are
+              dedicated to fostering a dynamic and inclusive community where
+              talent meets opportunity. Through meticulous curation, transparent
+              processes, and a commitment to excellence, we strive to be the
+              catalyst for meaningful and mutually beneficial collaborations.
+            </p>
           </div>
 
-          <div className="w-[35%] h-[70vh]">
+          <div className="lg:w-[35%] w-full lg:h-[70vh] h-[50vh mt-14 lg:mt-0]">
             <Image
               src={SmilingWoman}
               height={400}
@@ -173,10 +194,10 @@ function Company() {
             />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <FrequentlyAskedQuestions />
-      <Unleash /> */}
+      <FrequentlyAskedQuestions />
+      <Unleash />
     </section>
   );
 }
