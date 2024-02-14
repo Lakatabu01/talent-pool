@@ -1,4 +1,3 @@
-import { Main } from "next/document";
 import Unleash from "./unleash";
 import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
@@ -6,8 +5,6 @@ import dashes from "../assets/icons/dashes.svg";
 import Image from "next/image";
 
 function OurInfo() {
-  //   const placeholderText: string = "First line\nSecond line"; // Define placeholder as a string
-
   return (
     <main className=" w-full pt-24">
       <div className=" bg-gradient-to-b from-[#A1A1FF77] via-[#9E9EF877] to-[#fff] pb-20 relative">
@@ -103,11 +100,11 @@ function OurInfo() {
             </div>
 
             <div className="w-[90%] mx-auto my-6 p-4">
-              <div className="flex justify-between flex-col lg:flex-row">
+              <div className="flex justify-between flex-col lg:flex-row ">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="lg:w-[45%] placeholder:text-base w-[95%] border px-4 py-3 focus:outline-none rounded-lg border-[#D8D1D1] placeholder:text-black"
+                  className="lg:w-[45%] placeholder:text-base w-[95%] mt-8 border border-[#D8D1D1] px-4 py-3 focus:outline-none rounded-lg placeholder:text-black"
                 />
 
                 <input
@@ -116,11 +113,11 @@ function OurInfo() {
                   className="lg:w-[45%] placeholder:text-base w-[95%] mt-8 border border-[#D8D1D1] px-4 py-3 focus:outline-none rounded-lg placeholder:text-black"
                 />
               </div>
-              <div className="flex justify-between py-10 flex-col lg:flex-row">
+              <div className="flex justify-between py-10 flex-col lg:flex-row  ">
                 <input
                   type="tel"
                   placeholder="Phone Number "
-                  className="lg:w-[45%] placeholder:text-base w-[95%]  border border-[#D8D1D1] px-4 py-3 focus:outline-none rounded-lg placeholder:text-black"
+                  className="lg:w-[45%] placeholder:text-base w-[95%]  border border-[#D8D1D1] lg:mt-7 px-4 py-3 focus:outline-none rounded-lg placeholder:text-black"
                 />
 
                 <input
@@ -129,7 +126,7 @@ function OurInfo() {
                   className="lg:w-[45%] w-[95%] placeholder:text-base mt-8 border border-[#D8D1D1] px-4 py-3 rounded-lg focus:outline-none placeholder:text-black"
                 />
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between lg:mt-4">
                 <textarea
                   name="Message"
                   id=""
