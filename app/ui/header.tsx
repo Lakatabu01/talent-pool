@@ -17,7 +17,10 @@ const Header = () => {
         dropped == true ? "animate-drop shadow-2xl" : ""
       } `}>
       <div className="flex justify-between w-[89%] mx-auto items-center lg:w-[90%]">
-        <div className="bg-[#747474] w-16 h-6 rounded"></div>
+        <Link href="/">
+          {" "}
+          <div className="bg-[#747474] w-16 h-6 rounded"></div>
+        </Link>
         <nav className="lg:flex text-base list-none hidden w-[60%]  justify-between">
           <li className="px-2">Join talent pool</li>
           <li className="px-2">Hire a talent</li>
@@ -26,7 +29,9 @@ const Header = () => {
             {" "}
             <Link href="/about">About</Link>{" "}
           </li>
-          <li className="px-2">Contact</li>
+          <li className="px-2">
+            <Link href="/contact">Contact</Link>
+          </li>
         </nav>
 
         <div className="hidden lg:block">
@@ -80,8 +85,18 @@ const Header = () => {
 
           <div className="flex flex-col my-6">
             <h4 className="text-base text-[#2C2B2B] font-semibold">Company</h4>
-            <p className="my-3 text-sm">About</p>
-            <p className="text-sm">Contact us</p>
+            <p className="my-3 text-sm">
+              {" "}
+              <Link href="/about" onClick={menuDisplay}>
+                About
+              </Link>
+            </p>
+            <p className="text-sm">
+              {" "}
+              <Link href="/contact" onClick={menuDisplay}>
+                Contact us
+              </Link>
+            </p>
           </div>
 
           <div className="">
