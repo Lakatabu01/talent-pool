@@ -2,7 +2,6 @@ import { Main } from "next/document";
 import Unleash from "./unleash";
 import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
-import TwoLinePlaceholder from "../lib/two_line_placeholder";
 import dashes from "../assets/icons/dashes.svg";
 import Image from "next/image";
 
