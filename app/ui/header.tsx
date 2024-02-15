@@ -43,12 +43,12 @@ const Header = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-6 h-6 pl-2">
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="m19.5 8.25-7.5 7.5-7.5-7.5"
             />
           </svg>
@@ -66,9 +66,9 @@ const Header = () => {
             <path
               d="M1.66675 14.6667H12.3334M1.66675 8.00001H20.3334M9.66675 1.33334H20.3334"
               stroke="#2F2F8C"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
