@@ -7,7 +7,7 @@ import avatar1 from "../assets/images/Avatar1.png";
 import avatar2 from "../assets/images/Avatar2.png";
 import avatar3 from "../assets/images/Avatar3.png";
 import { useState } from "react";
-// import SuccessSlider from "./client_success_slider";
+import SuccessSlider from "./client_success_slider";
 import FrequentlyAskedQuestions from "./frequently_asked_questions";
 import Unleash from "./unleash";
 // import { useEffect } from "react";
@@ -234,7 +234,7 @@ const VettedTalent = () => {
           </div>
         </div>
 
-        {/* <SuccessSlider /> */}
+        <SuccessSlider />
 
         <div className="w-[94%] ml-12 hidden lg:flex justify-between ">
           <div className="w-[30%]  p-4  border-[#4D4DB2] border-t-0 border-l-0 border-r-2 border-b-2 border-dashed">
