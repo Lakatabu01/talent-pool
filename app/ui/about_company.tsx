@@ -2,7 +2,7 @@ import Image from "next/image";
 import model3 from "../assets/images/model3.jpeg";
 import dashes from "../assets/icons/dashes.svg";
 import boardMeeting from "../assets/images/board-meeting.png";
-import SimpleSlider from "./partners_slider";
+// import SimpleSlider from "./partners_slider";
 import SmilingWoman from "../assets/images/woman.png";
 import FrequentlyAskedQuestions from "./frequently_asked_questions";
 import Unleash from "./unleash";
@@ -149,7 +149,7 @@ function Company() {
           </h2>
         </div>
 
-        <SimpleSlider />
+        {/* <SimpleSlider /> */}
 
         <div className="w-full justify-between hidden lg:flex mt-8">
           <div className="bg-[#747474] w-[18%] h-8 "></div>
