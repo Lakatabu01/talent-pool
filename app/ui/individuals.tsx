@@ -6,7 +6,7 @@ import model3 from "../assets/images/model3.jpeg";
 import whsam from "../assets/images/whsam.png";
 import layer from "../assets/icons/layer.svg";
 // import MySlider from "./partners_slider";
-import SimpleSlider from "./partners_slider";
+// import SimpleSlider from "./partners_slider";
 
 const Individuals = () => {
   return (
@@ -99,7 +99,7 @@ const Individuals = () => {
           </div>
         </div>
 
-        <SimpleSlider />
+        {/* <SimpleSlider /> */}
 
         <div className="w-full justify-between hidden lg:flex mt-8">
           <div className="bg-[#747474] w-[18%] h-8 "></div>
