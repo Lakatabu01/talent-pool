@@ -10,6 +10,7 @@ import { useState } from "react";
 import SuccessSlider from "./client_success_slider";
 import FrequentlyAskedQuestions from "./frequently_asked_questions";
 import Unleash from "./unleash";
+// import { useEffect } from "react";
 
 const VettedTalent = () => {
   return (

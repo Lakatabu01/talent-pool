@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Header from "./ui/header";
 import HeroSection from "./ui/hero_section";
