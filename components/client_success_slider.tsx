@@ -1,10 +1,10 @@
 "use client";
 import React, { Component } from "react";
 import Slider from "react-slick";
+import layer from "../public/assets/icons/layer.svg";
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import layer from "../assets/icons/layer.svg";
-import Image from "next/image";
 
 export default class SuccessSlider extends Component {
   render() {

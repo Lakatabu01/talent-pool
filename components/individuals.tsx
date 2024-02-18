@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import model1 from "../assets/images/model1.jpeg";
-import model2 from "../assets/images/model2.jpeg";
-import model3 from "../assets/images/model3.jpeg";
-import whsam from "../assets/images/whsam.png";
-import layer from "../assets/icons/layer.svg";
+import model1 from "../public/assets/images/model1.jpeg";
+import model2 from "../public/assets/images/model2.jpeg";
+import model3 from "../public/assets/images/model3.jpeg";
+import whsam from "../public/assets/images/whsam.png";
+import layer from "../public/assets/icons/layer.svg";
 // import MySlider from "./partners_slider";
 import SimpleSlider from "./partners_slider";
 

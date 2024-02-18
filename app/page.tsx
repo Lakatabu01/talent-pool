@@ -1,16 +1,5 @@
-import Image from "next/image";
-import Header from "./ui/header";
-import HeroSection from "./ui/hero_section";
-import Individuals from "./ui/individuals";
-import VettedTalent from "./ui/vetted-talent";
-import "./globals.css";
+import Home from "../modules/home";
 
-export default function Home() {
-  return (
-    <main className="max-w-full">
-      <HeroSection />
-      <Individuals />
-      <VettedTalent />
-    </main>
-  );
+export default function Page() {
+  return <Home />;
 }

@@ -1,10 +1,5 @@
-import Company from "../ui/about_company";
-import HeroSection from "../ui/hero_section";
+import About from "../../modules/about";
 
 export default function Page() {
-  return (
-    <main>
-      <Company />
-    </main>
-  );
+  return <About />;
 }

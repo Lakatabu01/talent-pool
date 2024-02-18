@@ -1,13 +1,13 @@
 import Image from "next/image";
-import model3 from "../assets/images/model3.jpeg";
-import dashes from "../assets/icons/dashes.svg";
-import boardMeeting from "../assets/images/board-meeting.png";
+import model3 from "../public/assets/images/model3.jpeg";
+import dashes from "../public/assets/icons/dashes.svg";
+import boardMeeting from "../public/assets/images/board-meeting.png";
 import SimpleSlider from "./partners_slider";
-import SmilingWoman from "../assets/images/woman.png";
+import SmilingWoman from "../public/assets/images/woman.png";
 import FrequentlyAskedQuestions from "./frequently_asked_questions";
 import Unleash from "./unleash";
-import dashesTwo from "../assets/icons/dashes-2.svg";
-import happyEmployees from "../assets/images/happy-employees.png";
+import dashesTwo from "../public/assets/icons/dashes-2.svg";
+import happyEmployees from "../public/assets/images/happy-employees.png";
 
 function Company() {
   return (

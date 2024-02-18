@@ -1,7 +1,7 @@
 import Unleash from "./unleash";
 import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
-import dashes from "../assets/icons/dashes.svg";
+import dashes from "../public/assets/icons/dashes.svg";
 import Image from "next/image";
 
 function OurInfo() {

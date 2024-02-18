@@ -1,10 +1,10 @@
-import arrow from "../assets/icons/Vector.svg";
+import arrow from "../public/assets/icons/Vector.svg";
 import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
 import Image from "next/image";
-import avatar1 from "../assets/images/Avatar1.png";
-import avatar2 from "../assets/images/Avatar2.png";
-import avatar3 from "../assets/images/Avatar3.png";
+import avatar1 from "../public/assets/images/Avatar1.png";
+import avatar2 from "../public/assets/images/Avatar2.png";
+import avatar3 from "../public/assets/images/Avatar3.png";
 
 const HeroSection = () => {
   return (
