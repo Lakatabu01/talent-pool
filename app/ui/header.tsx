@@ -17,20 +17,20 @@ const Header = () => {
         dropped == true ? "animate-drop shadow-2xl" : ""
       } `}>
       <div className="flex justify-between w-[89%] mx-auto items-center lg:w-[90%]">
-        <Link href="/">
-          {" "}
-          <div className="bg-[#747474] w-16 h-6 rounded"></div>
-        </Link>
+        {/* <Link href="/"> */}
+
+        <div className="bg-[#747474] w-16 h-6 rounded"></div>
+        {/* </Link> */}
         <nav className="lg:flex text-base list-none hidden w-[60%]  justify-between">
           <li className="px-2">Join talent pool</li>
           <li className="px-2">Hire a talent</li>
           <li className="px-2">Discover solutions</li>
           <li className="px-2">
             {" "}
-            <Link href="/about">About</Link>{" "}
+            {/* <Link href="/about">About</Link>{" "} */}About
           </li>
           <li className="px-2">
-            <Link href="/contact">Contact</Link>
+            {/* <Link href="/contact">Contact</Link> */}Contact
           </li>
         </nav>
 
@@ -86,14 +86,16 @@ const Header = () => {
           <div className="flex flex-col my-6">
             <h4 className="text-base text-[#2C2B2B] font-semibold">Company</h4>
             <p className="my-3 text-sm">
-              <Link href="/about" onClick={menuDisplay}>
+              {/* <Link href="/about" onClick={menuDisplay}>
                 About
-              </Link>
+              </Link> */}{" "}
+              About
             </p>
             <p className="text-sm">
-              <Link href="/contact" onClick={menuDisplay}>
+              {/* <Link href="/contact" onClick={menuDisplay}>
                 Contact us
-              </Link>
+              </Link> */}{" "}
+              Contact us
             </p>
           </div>
 
