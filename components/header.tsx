@@ -85,16 +85,14 @@ const Header = () => {
           <div className="flex flex-col my-6">
             <h4 className="text-base text-[#2C2B2B] font-semibold">Company</h4>
             <p className="my-3 text-sm">
-              {/* <Link href="/about" onClick={menuDisplay}>
+              <Link href="/about" onClick={menuDisplay}>
                 About
-              </Link> */}{" "}
-              About
+              </Link>
             </p>
             <p className="text-sm">
-              {/* <Link href="/contact" onClick={menuDisplay}>
+              <Link href="/contact" onClick={menuDisplay}>
                 Contact us
-              </Link> */}{" "}
-              Contact us
+              </Link>
             </p>
           </div>
 
