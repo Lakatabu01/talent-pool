@@ -3,6 +3,7 @@ import DefaultButton from "./default_button";
 import { TransparentButton } from "./default_button";
 import dashes from "../public/assets/icons/dashes.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 function OurInfo() {
   return (
@@ -81,10 +82,11 @@ function OurInfo() {
         <div className="flex mx-auto justify-center mt-10 w-full pb-20">
           <button
             className={` bg-[#2F2F8C] text-sm rounded px-3 py-2 border border-[#2F2F8C] text-white w-[40%] lg:w-[12%] h-14`}>
-            As a company
-          </button>{" "}
+            <Link href="./company"> As a company</Link>
+          </button>
+
           <button className="w-[40%] lg:w-[12%] bg-[rgba(25, 25, 93, 0)] -ml-1 text-sm h-14 rounded px-3 py-2 border border-[#2F2F8C] text-[#2F2F8C] ">
-            As a talent
+            <Link href="/talent"> As a talent</Link>
           </button>
         </div>
 

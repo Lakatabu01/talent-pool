@@ -5,6 +5,7 @@ import Image from "next/image";
 import avatar1 from "../public/assets/images/Avatar1.png";
 import avatar2 from "../public/assets/images/Avatar2.png";
 import avatar3 from "../public/assets/images/Avatar3.png";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -83,8 +84,13 @@ const HeroSection = () => {
 
       <div className="flex w-full  justify-center my-8 lg:my-6">
         <div>
-          <DefaultButton buttonName="Hire Talents" />
-          <TransparentButton btnName="Become a Talent" />
+          <Link href="/company">
+            <DefaultButton buttonName="Hire Talents" />
+          </Link>
+
+          <Link href="/talent">
+            <TransparentButton btnName="Become a Talent" />
+          </Link>
         </div>
       </div>
 

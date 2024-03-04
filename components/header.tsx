@@ -44,7 +44,9 @@ const Header = () => {
             </nav>
 
             <div className="hidden lg:block">
-              <DefaultButton buttonName="Get started" />
+              <Link href="/company">
+                <DefaultButton buttonName="Get started" />
+              </Link>
             </div>
             <div className="lg:flex hidden">
               <p>Login</p>
@@ -134,7 +136,9 @@ const Header = () => {
 
             <div className="flex justify-center mt-10 w-full">
               <div>
-                <DefaultButton buttonName="Get started" />
+                <Link href="/company">
+                  <DefaultButton buttonName="Get started" />
+                </Link>
                 <TransparentButton btnName="Login" />
               </div>
             </div>

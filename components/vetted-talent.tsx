@@ -4,13 +4,10 @@ import { useState } from "react";
 import DefaultButton from "./default_button";
 import Image from "next/image";
 import layer from "../public/assets/icons/layer.svg";
-// import avatar1 from "../public/assets/images/Avatar1.png";
-// import avatar2 from "../public/assets/images/Avatar2.png";
-// import avatar3 from "../public/assets/images/Avatar3.png";
 import SuccessSlider from "./client_success_slider";
 import FrequentlyAskedQuestions from "./frequently_asked_questions";
 import Unleash from "./unleash";
-// import { useEffect } from "react";
+import Link from "next/link";
 
 const VettedTalent = () => {
   return (
@@ -27,7 +24,9 @@ const VettedTalent = () => {
             potential meets endless possibilities.
           </p>
           <div className="flex w-full justify-center">
-            <DefaultButton buttonName="Become a Talent" />
+            <Link href="/talent">
+              <DefaultButton buttonName="Become a Talent" />
+            </Link>
           </div>
         </div>
       </div>
@@ -333,199 +332,7 @@ const VettedTalent = () => {
         </div>
       </div>
 
-      {/* Delete later */}
-      {/* <div className="w-[90%] flex flex-col items-center mt-16 lg:mt-32 mb-10 mx-auto">
-        <h3 className="text-[#2F2F8C] text-2xl lg:text-4xl text-center lg:text-start">
-          Frequently asked questions
-        </h3>
-        <p className="text-center my-5">
-          We believe that diverse perspectives drive innovation, and we strive
-          to create an{" "}
-        </p>
-      </div>
-
-      <div className="w-full flex justify-center">
-        <div className="lg:w-[80%] w-[90%] flex flex-col text-base font-semibold font-montserrat text-[#101828]">
-          <div className="my-4 py-2 px-4">
-            <div className="flex justify-between items-center">
-              <p className=" mr-3 lg:mr-0">
-                How long is the internship program?
-              </p>
-              <button className="bg-[transparent] border-none " onClick={FAQ1}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none">
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#202054"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className={`w-full font-normal animate-slide-in-up pt-2 ${
-                clicked1 ? "block" : "hidden"
-              } `}>
-              Lorem, ipsum dolor.
-            </div>
-          </div>
-
-          <div className="my-4 py-2 px-4">
-            <div className="flex justify-between items-center">
-              <p className=" mr-3 lg:mr-0">
-                Can I apply for more than one internship position?
-              </p>
-              <button className="bg-[transparent] border-none " onClick={FAQ2}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none">
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#202054"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className={`w-full font-normal animate-slide-in-up pt-2 ${
-                clicked2 ? "block" : "hidden"
-              } `}>
-              Lorem, ipsum dolor.
-            </div>
-          </div>
-
-          <div className="my-4 py-2 px-4">
-            <div className="flex justify-between items-center">
-              <p className=" mr-3 lg:mr-0">Are remote internships available?</p>
-              <button className="bg-[transparent] border-none " onClick={FAQ3}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none">
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#202054"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className={`w-full font-normal animate-slide-in-up pt-2 ${
-                clicked3 ? "block" : "hidden"
-              } `}>
-              Lorem, ipsum dolor.
-            </div>
-          </div>
-
-          <div className="my-4 py-2 px-4">
-            <div className="flex justify-between items-center">
-              <p className=" mr-3 lg:mr-0">
-                How can I stay updated on internship opportunities and company
-                news?
-              </p>
-              <button className="bg-[transparent] border-none " onClick={FAQ4}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none">
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#202054"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className={`w-full font-normal animate-slide-in-up pt-2 ${
-                clicked4 ? "block" : "hidden"
-              } `}>
-              Lorem, ipsum dolor.
-            </div>
-          </div>
-
-          <div className="my-4 py-2 px-4">
-            <div className="flex justify-between items-center">
-              <p className=" mr-3 lg:mr-0">
-                What happens after I submit my application?
-              </p>
-              <button className="bg-[transparent] border-none " onClick={FAQ5}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none">
-                  <path
-                    d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-                    stroke="#202054"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              className={`w-full font-normal animate-slide-in-up pt-2 ${
-                clicked5 ? "block" : "hidden"
-              } `}>
-              Lorem, ipsum dolor.
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <FrequentlyAskedQuestions />
-
-      {/* <div className="flex w-full justify-center bg-[#F9FAFB]">
-        <div className="lg:w-[50%] w-[90%] my-10">
-          <div className="w-full flex justify-center mt-14">
-            <div className="flex justify-center px-4">
-              <Image src={avatar1} alt="image of man" />
-              <Image
-                className="-ml-4"
-                src={avatar2}
-                alt="image of smiling woman"
-              />
-              <Image
-                className="-ml-4"
-                src={avatar3}
-                alt="image of smiling woman"
-              />
-            </div>
-          </div>
-
-          <h3 className="text-[#2F2F8C] text-2xl lg:text-4xl text-center py-8">
-            Unleash your talent now and begin your internship role Today
-          </h3>
-
-          <div className="w-full flex justify-center">
-            <DefaultButton buttonName="Register" />
-          </div>
-        </div>
-      </div> */}
 
       <Unleash />
     </section>

@@ -3,6 +3,7 @@ import avatar2 from "../public/assets/images/Avatar2.png";
 import avatar3 from "../public/assets/images/Avatar3.png";
 import Image from "next/image";
 import DefaultButton from "./default_button";
+import Link from "next/link";
 
 const Unleash = () => {
   return (
@@ -29,7 +30,9 @@ const Unleash = () => {
         </h3>
 
         <div className="w-full flex justify-center">
-          <DefaultButton buttonName="Register" />
+          <Link href="/talent">
+            <DefaultButton buttonName="Register" />
+          </Link>
         </div>
       </div>
     </div>
